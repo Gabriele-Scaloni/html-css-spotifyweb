@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+header {
+    position: fixed;
+    width: calc(100% - 250px);
+    height:100px ;
+    background-color: aqua;
+    margin-left: 250px;
+}
+
+aside {
+    float: left;
+    width: 250px;
+    height: calc(100vh - 100px);
+    background-color: blueviolet;
+}
+
+main {
+    float: left;
+    width: calc(100% - 250px);
+    height: calc(100vh - 100px);
+    background-color: chartreuse;
+    padding-top: 100px;
+}
+
+footer{
+    float: left;
+    width: 100%;
+    height: 100px;
+    background-color: darkgray;
+}
