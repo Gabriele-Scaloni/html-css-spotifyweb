@@ -54,19 +54,21 @@ aside div{
     margin: 15px;
 }
 .testo-logo{
-    vertical-align: center;
     margin: 20px 5px;
 }
 
 ul {
     list-style-type: none;
     }
+
 li {
     margin: 10px 15px;
 }
+
 #playlist, #playlists-name {
     margin: 10px 15px;
 }
+
 .footer-aside {
     position:fixed;
     bottom: 80px;
@@ -75,7 +77,7 @@ li {
     padding: 0 15px 5px 15px;
 }
 hr {
-    margin: 5px 0;
+    margin: 5px 0 ;
     color: lightgray;
 }
 
@@ -94,9 +96,78 @@ footer {
     align-items: center;
     width: 100%;
     height: 80px;
-    background-color: darkgray;
+    background-color: rgb(22, 22, 22);
 }
 .img-col-left {
     width: 50px;
-    margin-left: 10px;
+    margin: auto 10px;
+    
+}
+.col.left {
+    display: flex;
+    align-items: center;
+}
+
+.icone-col-left { 
+    font-size: 18px;
+    margin: auto 5px auto 50px;
+    color: white;
+    /* da spostare più a destra */
+}
+
+.autore {
+    color: white;
+}
+
+.brano-nome {
+    color: rgb(117, 116, 116);
+}
+
+.col.centrum {
+    margin: 5px, 10px;
+    text-align: center;
+}
+
+.fa-random, .fa-fast-backward, .fa-fast-forward,
+.fa-redo-alt, .fa-play-circle{
+    font-size: 20px;
+    margin: auto 5px;
+    color: white;
+}
+.fa-play-circle{
+    font-size: 30px;
+}
+
+.barra-scorrimento {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.barra {
+    width: 200px;
+    height: 3px;
+    background-color: rgb(224, 219, 219);
+}
+.minuti {
+    color: white;
+    margin: auto 5px;
+}
+
+.col.right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.barra.seconda {
+    width: 100px;
+}
+
+.fa-list, .fa-desktop, 
+.fa-volume-up {
+    font-size: 18px;
+    margin: auto 5px;
+    color: white;
 }
