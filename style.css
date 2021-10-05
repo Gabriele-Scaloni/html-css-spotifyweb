@@ -1,10 +1,10 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body::after{
+body::after {
     content: "";
     display: table;
     clear: both;
@@ -12,29 +12,91 @@ body::after{
 header {
     position: fixed;
     width: calc(100% - 250px);
-    height:100px ;
-    background-color: aqua;
+    height:80px ;
+    background-color: rgb(31, 31, 31);
     margin-left: 250px;
 }
 
 aside {
     float: left;
     width: 250px;
-    height: calc(100vh - 100px);
-    background-color: blueviolet;
+    height: calc(100vh - 80px);
+    background-color: black;
+    overflow-y: auto;
+    position: relative;
+}
+aside div{
+    color: rgb(117, 116, 116);
 }
 
-main {
+.fas, .far{
+    margin-right: 5px;
+    color: rgb(117, 116, 116);
+}
+
+.upgrade {
+    width: 180px;
+    height: 40px;
+    float: right;
+    color: white;
+    background-color:rgb(31, 31, 31) ;
+    border-radius: 30px;
+    border: 1px solid white;
+    margin:20px 10px auto auto;
+
+}
+
+.img-logo {
+    width: 50px;
+}
+.logo{
+    display: flex;
+    margin: 15px;
+}
+.testo-logo{
+    vertical-align: center;
+    margin: 20px 5px;
+}
+
+ul {
+    list-style-type: none;
+    }
+li {
+    margin: 10px 15px;
+}
+#playlist, #playlists-name {
+    margin: 10px 15px;
+}
+.footer-aside {
+    position:fixed;
+    bottom: 80px;
+    width: 230px;
+    height: 50px;
+    padding: 0 15px 5px 15px;
+}
+hr {
+    margin: 5px 0;
+    color: lightgray;
+}
+
+ main {
     float: left;
     width: calc(100% - 250px);
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     background-color: chartreuse;
     padding-top: 100px;
 }
 
-footer{
+footer {
     float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-    height: 100px;
+    height: 80px;
     background-color: darkgray;
+}
+.img-col-left {
+    width: 50px;
+    margin-left: 10px;
 }
