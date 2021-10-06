@@ -9,6 +9,7 @@ body::after {
     display: table;
     clear: both;
 }
+
 header {
     position: fixed;
     width: calc(100% - 250px);
@@ -24,8 +25,9 @@ aside {
     height: calc(100vh - 80px);
     background-color: black;
     overflow-y: auto;
-    
+
 }
+
 aside div{
     color: rgb(117, 116, 116);
 }
@@ -60,10 +62,12 @@ aside div{
 
 ul {
     list-style-type: none;
-    }
+
+}
 
 li {
     margin: 10px 15px;
+  
 }
 
 a{
@@ -100,20 +104,41 @@ hr {
     float: left;
     width: calc(100% - 250px);
     height: calc(100vh - 80px);
-    background-color: rgb(15, 2, 51);
+    background-color: rgb(1, 0, 12);
     padding-top: 100px;
+    overflow-y: auto;
 }
 
 .menu-main{
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
 }
 
 #border-bottom{
     border-bottom: 2px solid yellowgreen;
     width:80px;
+}
+
+h2{
+    color: white;
+    margin: 20px 0 0 15px;
+}
+
+.img-main{
+    margin: 15px 0 ;
+    max-width: 100px;
+    
+}
+img:hover{
+    cursor: pointer;
+}
+
+.playlist-main{
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    
 }
 
 footer {
