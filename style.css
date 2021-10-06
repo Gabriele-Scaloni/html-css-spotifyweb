@@ -52,7 +52,7 @@ aside div{
 .img-logo {
     width: 50px;
 }
-.logo{
+.logo {
     display: flex;
     margin: 15px;
 }
@@ -70,18 +70,19 @@ li {
   
 }
 
-a{
+a {
     text-decoration: none;
     color: rgb(117, 116, 116);
 }
-a:hover{
+a:hover {
     color: white;
 }
 
-.fa-home{
+.fa-home {
     padding-left: -10px;
     border-left: 2px solid yellowgreen;
 }
+
 
 #playlist, #playlists-name {
     margin: 10px 15px;
@@ -109,7 +110,7 @@ hr {
     overflow-y: auto;
 }
 
-.menu-main{
+.menu-main, .text{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -122,24 +123,28 @@ hr {
 
 h2{
     color: white;
-    margin: 20px 0 0 15px;
+    margin: 20px 0 15px 15px;
 }
 
 .img-main{
-    margin: 15px 0 ;
-    max-width: 100px;
+    margin: 15px 15px 0 0  ;
+    max-width: 150px;
     
+}
+
+.img-main.bottom {
+     border-radius: 50%;
 }
 img:hover{
     cursor: pointer;
 }
 
-.playlist-main{
+.main-top, .main-centrum, .main-bottom{
     margin: 15px;
     display: flex;
     flex-wrap: wrap;
-    
 }
+
 
 footer {
     float: left;
@@ -168,14 +173,16 @@ footer {
     /* da spostare più a destra */
 }
 
-.autore {
-    color: white;
-}
-
-.brano-nome {
+.testo-grey {
     color: rgb(117, 116, 116);
-}
 
+}
+.testo-grey.margin {
+    margin-left: 15px;
+}
+.white-text {
+color: WHITE;
+}
 .col.centrum {
     margin: 5px, 10px;
     text-align: center;
@@ -203,6 +210,7 @@ footer {
     height: 3px;
     background-color: rgb(224, 219, 219);
 }
+
 .minuti {
     color: white;
     margin: auto 5px;
