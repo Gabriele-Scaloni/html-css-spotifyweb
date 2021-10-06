@@ -17,6 +17,7 @@ header {
     background-color: rgb(31, 31, 31);
     margin-left: 250px;
     opacity: 0.7;
+    padding-right: 16px;
 }
 
 aside {
@@ -25,7 +26,6 @@ aside {
     height: calc(100vh - 80px);
     background-color: black;
     overflow-y: auto;
-
 }
 
 aside div{
@@ -46,7 +46,11 @@ aside div{
     border-radius: 30px;
     border: 1px solid white;
     margin:20px 10px auto auto;
-
+}
+.upgrade:hover {
+    cursor: pointer;
+   width:200px ;
+   height: 50px;
 }
 
 .img-logo {
@@ -66,8 +70,7 @@ ul {
 }
 
 li {
-    margin: 10px 15px;
-  
+    margin: 10px 15px; 
 }
 
 a {
@@ -82,7 +85,11 @@ a:hover {
     padding-left: -10px;
     border-left: 2px solid yellowgreen;
 }
-
+.container{
+    max-width: 150px;
+    height: auto;
+    margin: 15px 15px 0 0  ;
+}
 
 #playlist, #playlists-name {
     margin: 10px 15px;
@@ -91,13 +98,15 @@ a:hover {
 .footer-aside {
     position:fixed;
     bottom: 80px;
-    max-width: 230px;
+    width: 230px;
     height: 50px;
     background-color: black;
-    padding: 0 15px 5px 15px;
+    margin-left: 15px;
+  /*   padding: 0 15px 5px 15px; */
 }
 hr {
-    margin: 5px 0 ;
+    width: 200px;
+    margin: 5px auto ;
     color: lightgray;
 }
 
@@ -127,14 +136,17 @@ h2{
 }
 
 .img-main{
-    margin: 15px 15px 0 0  ;
     max-width: 150px;
-    
+   
 }
-
+.img-main:hover {
+    background-color: grey ;
+    opacity: 0.5;
+}
 .img-main.bottom {
      border-radius: 50%;
 }
+
 img:hover{
     cursor: pointer;
 }
@@ -175,13 +187,21 @@ footer {
 
 .testo-grey {
     color: rgb(117, 116, 116);
-
 }
+
 .testo-grey.margin {
     margin-left: 15px;
 }
+
 .white-text {
 color: WHITE;
+}
+.text{
+    text-align: center;
+}
+.text.white-text{
+    flex-wrap: wrap;
+    text-align: center;
 }
 .col.centrum {
     margin: 5px, 10px;
@@ -194,6 +214,15 @@ color: WHITE;
     margin: auto 5px;
     color: white;
 }
+
+.fa-heart, .fa-folder, .fa-random, 
+.fa-fast-backward, .fa-fast-forward, .fa-redo-alt,
+.fa-play-circle, .fa-list, .fa-desktop,
+.fa-volume-up,  .barra, .barra-scorrimento :hover{
+
+    cursor: pointer;
+}
+
 .fa-play-circle{
     font-size: 30px;
 }
@@ -234,3 +263,6 @@ color: WHITE;
     margin: auto 5px;
     color: white;
 }
+
+/* parte responsive */
+
