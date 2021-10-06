@@ -4,25 +4,36 @@
     box-sizing: border-box;
 }
 
-body::after {
+body::after{
     content: "";
     display: table;
     clear: both;
 }
 
-header {
+.header {
     position: fixed;
-    width: calc(100% - 250px);
-    height:80px ;
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    width: calc(100% - 230px);
+    height: 80px;
     background-color: rgb(31, 31, 31);
-    margin-left: 250px;
-    opacity: 0.7;
-    padding-right: 16px;
+    opacity: 0.7;  
 }
 
+ 
+button {
+    width: 180px;
+    height: 40px;
+    color: white;
+    background-color:rgb(31, 31, 31) ;
+    border-radius: 30px;
+    border: 1px solid white;
+    margin:10px 20px 0 0;
+}
 aside {
     float: left;
-    width: 250px;
+    width: 230px;
     height: calc(100vh - 80px);
     background-color: black;
     overflow-y: auto;
@@ -31,22 +42,14 @@ aside {
 aside div{
     color: rgb(117, 116, 116);
 }
-
+.main-aside {
+    height: calc(100vh - 140px);
+}
 .fas, .far{
     margin-right: 5px;
     color: rgb(117, 116, 116);
 }
 
-.upgrade {
-    width: 180px;
-    height: 40px;
-    float: right;
-    color: white;
-    background-color:rgb(31, 31, 31) ;
-    border-radius: 30px;
-    border: 1px solid white;
-    margin:20px 10px auto auto;
-}
 .upgrade:hover {
     cursor: pointer;
    width:200px ;
@@ -88,7 +91,6 @@ a:hover {
 .container{
     display: flex;
     flex-direction: column;
-
     max-width: 150px;
     height: auto;
     margin: 15px 15px 0 0  ;
@@ -99,24 +101,20 @@ a:hover {
 }
 
 .footer-aside {
-    position:fixed;
-    bottom: 80px;
-    width: 220px;
-    height: 50px;
     background-color: black;
     margin-left: 15px;
     margin-right: 10px;
   /*   padding: 0 15px 5px 15px; */
 }
 hr {
-    width: 200px;
+    width: 180px;
     margin: 5px auto ;
     color: lightgray;
 }
 
- main {
+main {
     float: left;
-    width: calc(100% - 250px);
+    width: calc(100% - 230px);
     height: calc(100vh - 80px);
     background-color: rgb(1, 0, 12);
     padding-top: 100px;
@@ -179,12 +177,11 @@ footer {
 .col.left {
     display: flex;
     align-items: center;
-
 }
 
 .icone-col-left { 
     font-size: 18px;
-    padding-left: 50px;
+    padding-left: 15px;
     color: white;
     /* da spostare più a destra */
 }
