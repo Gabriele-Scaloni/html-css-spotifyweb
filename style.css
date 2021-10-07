@@ -312,11 +312,10 @@ footer {
     .fa-user-circle{
         position: relative;
         bottom: 30px;
-  
     }
   
     .main{
-        width: calc(100vw - 50px);
+    width: 800px;       
     }
 
 }
