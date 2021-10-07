@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-body::after{
+body::after {
     content: "";
     display: table;
     clear: both;
@@ -31,21 +31,24 @@ button {
     border: 1px solid white;
     margin:10px 20px 0 0;
 }
+
 aside {
     float: left;
     width: 230px;
     height: calc(100vh - 80px);
     background-color: black;
+}
+
+aside div {
+    color: rgb(117, 116, 116);
+}
+
+.main-aside {
+    height: calc(100vh - 140px);
     overflow-y: auto;
 }
 
-aside div{
-    color: rgb(117, 116, 116);
-}
-.main-aside {
-    height: calc(100vh - 140px);
-}
-.fas, .far{
+.fas, .far {
     margin-right: 5px;
     color: rgb(117, 116, 116);
 }
@@ -59,11 +62,13 @@ aside div{
 .img-logo {
     width: 50px;
 }
+
 .logo {
     display: flex;
     margin: 15px;
 }
-.testo-logo{
+
+.testo-logo {
     margin: 20px 5px;
 }
 
@@ -80,6 +85,7 @@ a {
     text-decoration: none;
     color: rgb(117, 116, 116);
 }
+
 a:hover {
     color: white;
 }
@@ -88,12 +94,15 @@ a:hover {
     padding-left: -10px;
     border-left: 2px solid yellowgreen;
 }
-.container{
+
+.container {
     display: flex;
     flex-direction: column;
-    max-width: 150px;
+    flex-wrap: wrap;
+    width: calc((100%-230px)/6);
+    min-width: 120px;
     height: auto;
-    margin: 15px 15px 0 0  ;
+    padding: 15px 15px 0 0  ;
 }
 
 #playlist, #playlists-name {
@@ -101,11 +110,12 @@ a:hover {
 }
 
 .footer-aside {
+    height: 60px;
     background-color: black;
     margin-left: 15px;
     margin-right: 10px;
-  /*   padding: 0 15px 5px 15px; */
 }
+
 hr {
     width: 180px;
     margin: 5px auto ;
@@ -121,39 +131,41 @@ main {
     overflow-y: auto;
 }
 
-.menu-main, .text{
+.menu-main, .text {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-#border-bottom{
+#border-bottom {
     border-bottom: 2px solid yellowgreen;
     width:80px;
 }
 
-h2{
+h2 {
     color: white;
     margin: 20px 0 15px 15px;
 }
 
-.img-main{
-    max-width: 150px;
-   
+.img-main {
+    width: 100%;
+    flex-wrap: wrap;
 }
+
 .img-main:hover {
     background-color: grey ;
     opacity: 0.5;
 }
+
 .img-main.bottom {
      border-radius: 50%;
 }
 
-img:hover{
+img:hover {
     cursor: pointer;
 }
 
-.main-top, .main-centrum, .main-bottom{
+.main-top, .main-centrum, .main-bottom {
     margin: 15px;
     display: flex;
     flex-wrap: wrap;
@@ -161,7 +173,6 @@ img:hover{
 
 
 footer {
-    float: left;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -169,11 +180,12 @@ footer {
     height: 80px;
     background-color: rgb(22, 22, 22);
 }
+
 .img-col-left {
     width: 50px;
     margin: auto 10px;
-    
 }
+
 .col.left {
     display: flex;
     align-items: center;
@@ -195,22 +207,25 @@ footer {
 }
 
 .white-text {
-color: WHITE;
+    color: WHITE;
 }
-.text{
+
+.text {
     text-align: center;
 }
-.text.white-text{
+
+.text.white-text {
     flex-wrap: wrap;
     text-align: center;
 }
+
 .col.centrum {
     margin: 5px, 10px;
     text-align: center;
 }
 
 .fa-random, .fa-fast-backward, .fa-fast-forward,
-.fa-redo-alt, .fa-play-circle{
+.fa-redo-alt, .fa-play-circle {
     font-size: 20px;
     margin: auto 5px;
     color: white;
@@ -219,18 +234,17 @@ color: WHITE;
 .fa-heart, .fa-folder, .fa-random, 
 .fa-fast-backward, .fa-fast-forward, .fa-redo-alt,
 .fa-play-circle, .fa-list, .fa-desktop,
-.fa-volume-up,  .barra, .barra-scorrimento :hover{
+.fa-volume-up,  .barra, .barra-scorrimento:hover{
    
     cursor: pointer;
 }
 
-.fa-play-circle{
+.fa-play-circle {
     font-size: 30px;
 }
 
 .barra-scorrimento {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -251,7 +265,6 @@ color: WHITE;
     justify-content: space-around;
     align-items: center;
     margin-right: 10px;
-    flex-wrap: wrap;
 }
 
 .barra.seconda {
@@ -267,3 +280,10 @@ color: WHITE;
 
 /* parte responsive */
 
+ @media all and (max-width: 850px) {
+ 
+   .img-main{ 
+       flex-wrap: wrap;
+
+   }
+}
